@@ -22,10 +22,8 @@ const [progress, setProgress] = useState(0);
     }, []);
 
     return (
-        <div className="h-1 w-full bg-neutral-800/50">
-            <div className="h-full origin-left bg-white opacity-40" style={{ transform: `scaleX(${progress})` }}>
-
-            </div>
+        <div className="h-1 w-full rounded-full bg-neutral-800/50 overflow-hidden">
+            <div className="h-full origin-left bg-white opacity-40" style={{ transform: `scaleX(${progress})` }}></div>
         </div>
     )
 }
