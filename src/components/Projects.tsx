@@ -3,9 +3,9 @@ import projects from '@/data/projects.json';
 
 function Projects() {
     return (
-        <div className="grid grid-cols-3">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2">
             {projects.map((p, i) => (
-                <a href={p.live} target="_blank" key={i} className={`p-10 relative h-150 w-150 mb-10 ${i % 2 === 0 ? 'bg-neutral-800/50' : 'bg-neutral-700/50'}`}>
+                <a href={p.live} target="_blank" key={i} className={`p-10 relative h-150 mb-10 ${i % 2 === 0 ? 'bg-neutral-800/50' : 'bg-neutral-700/50'}`}>
                     <div className="project-number">
                         <div className="flex gap-2 mb-5">
                         {p.tech.map((t) => (
