@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "ChessKnight",
+        "description": "A personal portfolio website built with React and Tailwind CSS to showcase projects and skills.",
+        "tech": ["JavaScript", "HTML", "CSS"],
+        "live": "danielekeberg.com/chess",
+        "github": "https://github.com/danielekeberg/portfolio"
+    },
+    {
+        "id": 2,
+        "title": "Danbook",
+        "description": "A social media platform for book lovers built with HTML, CSS and JavaScript.",
+        "tech": ["JavaScript", "HTML", "CSS"],
+        "live": "https://danbook.netlify.app/",
+        "github": "https://github.com/danielekeberg/danbook"
+    },
+    {
+        "id": 3,
+        "title": "TaskMaster",
+        "description": "A task management app built with React and Node.js to help users organize their tasks efficiently.",
+        "tech": ["React", "Node.js", "Express", "MongoDB"],
+        "live": "https://taskmasterapp.com",
+        "github": "https://github.com/danielekeberg/taskmaster"
+    }
+]
