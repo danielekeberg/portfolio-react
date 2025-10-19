@@ -6,12 +6,14 @@ import About from '@/components/About';
 import Work from '@/components/Work';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import { Analytics } from "@vercel/analytics/next"
 
 import Fade from '@/components/FadeAnimation/Fade';
 
 export default function Home() {
   return (
     <div className="mx-15" id="top">
+      <Analytics />
       <Header />
       <Fade dir='down'>
       <Collab />
