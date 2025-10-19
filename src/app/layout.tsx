@@ -9,6 +9,7 @@ const geistSans = Geist({
 });
 
 const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "700"],
 });
