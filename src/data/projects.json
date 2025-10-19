@@ -4,7 +4,7 @@
         "title": "ChessKnight",
         "description": "A personal portfolio website built with React and Tailwind CSS to showcase projects and skills.",
         "tech": ["JavaScript", "HTML", "CSS"],
-        "live": "danielekeberg.com/chess",
+        "live": "https://danielekeberg.com/chess",
         "github": "https://github.com/danielekeberg/portfolio"
     },
     {
@@ -17,10 +17,10 @@
     },
     {
         "id": 3,
-        "title": "TaskMaster",
-        "description": "A task management app built with React and Node.js to help users organize their tasks efficiently.",
-        "tech": ["React", "Node.js", "Express", "MongoDB"],
-        "live": "https://taskmasterapp.com",
-        "github": "https://github.com/danielekeberg/taskmaster"
+        "title": "TimeStampify",
+        "description": "Tracks and displays visit timestamps in real time using an API.",
+        "tech": ["React", "Node.js", "RestAPI"],
+        "live": "https://timestampify.netlify.app/",
+        "github": "https://github.com/danielekeberg/timestampify"
     }
 ]
