@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "title": "ChessKnight",
         "description": "A personal portfolio website built with React and Tailwind CSS to showcase projects and skills.",
         "tech": ["JavaScript", "HTML", "CSS"],
@@ -8,19 +7,24 @@
         "github": "https://github.com/danielekeberg/portfolio"
     },
     {
-        "id": 2,
-        "title": "Danbook",
-        "description": "A social media platform for book lovers built with HTML, CSS and JavaScript.",
+        "title": "RunTracker",
+        "description": "A running tracker that lets you log runs, monitor stats, and set weekly goals.",
         "tech": ["JavaScript", "HTML", "CSS"],
-        "live": "https://danbook.netlify.app/",
-        "github": "https://github.com/danielekeberg/danbook"
+        "live": "https://danielekeberg.com/runtracker",
+        "github": "https://github.com/danielekeberg/portfolio"
     },
     {
-        "id": 3,
         "title": "TimeStampify",
         "description": "Tracks and displays visit timestamps in real time using an API.",
         "tech": ["React", "RestAPI", "Tailwind CSS"],
         "live": "https://timestampify.netlify.app/",
         "github": "https://github.com/danielekeberg/timestampify"
+    },
+    {
+        "title": "Danbook",
+        "description": "A social media platform for book lovers built with HTML, CSS and JavaScript.",
+        "tech": ["JavaScript", "HTML", "CSS"],
+        "live": "https://danbook.netlify.app/",
+        "github": "https://github.com/danielekeberg/danbook"
     }
 ]
