@@ -1,17 +1,17 @@
 [
     {
-        "title": "ChessKnight",
-        "description": "A personal portfolio website built with React and Tailwind CSS to showcase projects and skills.",
-        "tech": ["JavaScript", "HTML", "CSS"],
-        "live": "https://danielekeberg.com/chess",
-        "github": "https://github.com/danielekeberg/portfolio"
-    },
-    {
         "title": "RunTracker",
         "description": "A running tracker that lets you log runs, monitor stats, and set weekly goals.",
         "tech": ["JavaScript", "HTML", "CSS"],
-        "live": "https://danielekeberg.com/runtracker",
-        "github": "https://github.com/danielekeberg/portfolio"
+        "live": "https://runtracker-one.vercel.app/",
+        "github": "https://github.com/danielekeberg/runtracker"
+    },
+    {
+        "title": "ChessKnight",
+        "description": "A personal portfolio website built with React and Tailwind CSS to showcase projects and skills.",
+        "tech": ["JavaScript", "HTML", "CSS"],
+        "live": "https://chessknight-five.vercel.app/",
+        "github": "https://github.com/danielekeberg/chessknight"
     },
     {
         "title": "TimeStampify",
