@@ -16,7 +16,7 @@ function Header() {
     }
 
     return ( 
-        <header className="my-8 flex gap-10 items-center justify-center text-gray-300 mb-10 fixed z-1000 top-0 left-15 right-15">
+        <header className="py-8 px-15 flex gap-10 items-center justify-center mb-10 fixed z-1000 top-0 left-0 right-0 backdrop-blur-xs">
             <h1 className="font-bold w-40 hover:text-white cursor-pointer" onClick={scrollToTop}>Daniel Ekeberg</h1>
             <ScrollProgress />
             <nav>
