@@ -19,7 +19,7 @@
         "id": 3,
         "title": "TimeStampify",
         "description": "Tracks and displays visit timestamps in real time using an API.",
-        "tech": ["React", "Node.js", "RestAPI"],
+        "tech": ["React", "RestAPI", "Tailwind CSS"],
         "live": "https://timestampify.netlify.app/",
         "github": "https://github.com/danielekeberg/timestampify"
     }
