@@ -6,6 +6,7 @@ import About from '@/components/About';
 import Work from '@/components/Work';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import TechStack from '@/components/TechStack';
 import { Analytics } from "@vercel/analytics/next"
 
 import Fade from '@/components/FadeAnimation/Fade';
@@ -24,6 +25,7 @@ export default function Home() {
       </Fade>
       <About />
       <Work />
+      <TechStack />
       <Contact />
       <Footer />
     </div>
