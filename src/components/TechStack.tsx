@@ -17,7 +17,7 @@ function TechStack() {
     const doubled = [...icons, ...icons];
     return (
         <>
-            <div className="flex gap-10 items-center mb-20 pt-20" id="stack">
+            <div className="flex gap-10 items-center mb-20 pt-20">
                 <div className="flex gap-6">
                     <h1 className="font-bold text-6xl text-neutral-600">Tech</h1>
                     <h1 className="font-bold text-6xl">Stack</h1>
