@@ -1,4 +1,4 @@
-import ConnectForm from "@/components/ConnectForm";
+import ConnectForm from "@/components/ContactForm";
 
 function Contact() {
     return (
