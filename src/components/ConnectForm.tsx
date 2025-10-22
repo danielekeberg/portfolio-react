@@ -18,7 +18,7 @@ function ConnectForm() {
         const day = now.getDate().toString().padStart(2, "0");
         const month = (now.getMonth() + 1).toString().padStart(2, "0");
         const year = now.getFullYear();
-        const formatted = `${hours}:${minutes} - ${day}.${month}.${year}`
+        const formatted = `${day}.${month}.${year} ${hours}:${minutes}`
 
         try {
             const res = await fetch("https://api.sheetbest.com/sheets/a76cd739-4604-4c7e-856c-f1506d6b8708", {
