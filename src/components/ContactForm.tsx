@@ -61,12 +61,12 @@ function ConnectForm() {
                 </div>
                 <div className="flex gap-5 mb-5">
                     <div className="relative">
-                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2" placeholder=" " type="email" id="email" onChange={(e) => setEmail(e.target.value)} />
+                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2" placeholder=" " type="email" id="email" onChange={(e) => setEmail(e.target.value)} required />
                         <label htmlFor="email" className="absolute left-2 text-neutral-400 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:text-base peer-focus:top-1 peer-focus:text-xs">Email</label>
                     </div>
                 </div>
                 <div className="flex gap-5 mb-5">
-                    <textarea className="border border-neutral-800 rounded resize-none h-50 p-2 w-full" placeholder="Message" id="msg" onChange={(e) => setMessage(e.target.value)} />
+                    <textarea className="border border-neutral-800 rounded resize-none h-50 p-2 w-full" placeholder="Message" id="msg" onChange={(e) => setMessage(e.target.value)} required />
                 </div>
                 <div>
                     <button type="submit" className="cursor-pointer border border-neutral-800 rounded-md hover:bg-neutral-900 w-full p-2 active:bg-neutral-600">SUBMIT</button>
