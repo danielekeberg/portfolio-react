@@ -12,19 +12,21 @@ function ConnectForm() {
         e.preventDefault();
         setStatus("Sending...");
         const now = new Date();
+        const time = Date.now();
         const hours = now.getHours().toString().padStart(2, "0");
         const minutes = now.getMinutes().toString().padStart(2, "0");
         const day = now.getDate().toString().padStart(2, "0");
         const month = (now.getMonth() + 1).toString().padStart(2, "0");
         const year = now.getFullYear();
-
         const formatted = `${hours}:${minutes} - ${day}.${month}.${year}`
+
         try {
             const res = await fetch("https://api.sheetbest.com/sheets/a76cd739-4604-4c7e-856c-f1506d6b8708", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     date: formatted,
+                    time: time,
                     firstname: firstName.trim(),
                     lastname: lastName.trim(),
                     email: email.trim(),
@@ -34,7 +36,7 @@ function ConnectForm() {
 
             if(!res.ok) {
                 const err = await res.text();
-                throw new Error((err || "Couldnt send message"));
+                throw new Error((err || "Couldn't send message"));
             }
             setStatus("Message sent!")
             setTimeout(() => {
