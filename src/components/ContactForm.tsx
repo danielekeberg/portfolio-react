@@ -1,5 +1,5 @@
 'use client';
-import { useState, FormEvent } from "react";
+import { useEffect, useState, FormEvent } from "react";
 
 function ConnectForm() {
     const [firstName, setFirstName] = useState("");
@@ -7,6 +7,20 @@ function ConnectForm() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("");
+    const [length, setLength] = useState(0);
+
+    useEffect(() => {
+            async function getLength() {
+                try {
+                    const res = await fetch('https://api.sheetbest.com/sheets/a76cd739-4604-4c7e-856c-f1506d6b8708');
+                    const data = await res.json();
+                    setLength(data.length);
+                } catch(err) {
+                    console.log("error");
+                }
+            }
+            getLength();
+        }, [])
 
     async function handleSubmit(e: FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -31,6 +45,7 @@ function ConnectForm() {
                     lastname: lastName.trim(),
                     email: email.trim(),
                     message: message.trim(),
+                    id: length,
                 }),
             });
 
@@ -38,6 +53,7 @@ function ConnectForm() {
                 const err = await res.text();
                 throw new Error((err || "Couldn't send message"));
             }
+            setLength(length + 1)
             setStatus("Message sent!")
             setTimeout(() => {
                 setStatus("");
