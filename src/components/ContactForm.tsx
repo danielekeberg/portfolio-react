@@ -12,10 +12,10 @@ function ConnectForm() {
     useEffect(() => {
             async function getLength() {
                 try {
-                    if (!process.env.NEXT_PUBLIC_API_URL) {
+                    if (!process.env.API_URL) {
                         throw new Error('API URL is not defined');
                     }
-                    const res = await fetch(process.env.NEXT_PUBLIC_API_URL);
+                    const res = await fetch(process.env.API_URL);
                     const data = await res.json();
                     setLength(data.length);
                 } catch(err) {
@@ -38,10 +38,10 @@ function ConnectForm() {
         const formatted = `${day}.${month}.${year} ${hours}:${minutes}`
 
         try {
-            if(!process.env.NEXT_PUBLIC_API_URL) {
+            if(!process.env.API_URL) {
                 throw new Error('error fetching api')
             }
-            const res = await fetch(process.env.NEXT_PUBLIC_API_URL, {
+            const res = await fetch(process.env.API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
