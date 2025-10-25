@@ -8,7 +8,7 @@ export default function Message() {
     const [loading, setLoading] = useState(false);
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
     const admin = localStorage.getItem('admin');
-    if(admin) {
+    if(!admin) {
         return (
             <div>
                 <h1>No access</h1>
