@@ -5,9 +5,9 @@ function Projects() {
     return (
         <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
             {projects.map((p, i) => (
-                <a href={p.live} target="_blank" key={i} className={`p-10 relative h-150 min-w-125 mb-10 ${i % 2 === 0 ? 'bg-neutral-800/50' : 'bg-neutral-700/50'}`}>
+                <a href={p.live} target="_blank" key={i} className={`p-10 relative h-150 min-w-125 mb-10 ${i % 2 === 0 ? 'bg-neutral-800/50' : 'bg-neutral-700/50'} ${i % 2 === 0 ? 'hover:bg-neutral-700/50' : 'hover:bg-neutral-600/50'}`}>
                     <div className="project-number gap-2 mb-5">
-                        <img src={p.logo} className="absolute left-0 top-0 opacity-20 -z-1000" />
+                        <img src={p.logo} className="absolute left-0 top-0 opacity-20" />
                         <div className="absolute top-12 right-12">
                             <h1 className="text-6xl font-bold text-neutral-500">{String(i + 1).padStart(2, '0')}</h1>
                         </div>
