@@ -8,14 +8,15 @@ function ConnectForm() {
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("");
     const [length, setLength] = useState(0);
+    const apiUrl = process.env.NEXT_PUBLI_API_URL;
 
     useEffect(() => {
             async function getLength() {
                 try {
-                    if (!process.env.API_URL) {
+                    if (!apiUrl) {
                         throw new Error('API URL is not defined');
                     }
-                    const res = await fetch(process.env.API_URL);
+                    const res = await fetch(apiUrl);
                     const data = await res.json();
                     setLength(data.length);
                 } catch(err) {
@@ -38,10 +39,10 @@ function ConnectForm() {
         const formatted = `${day}.${month}.${year} ${hours}:${minutes}`
 
         try {
-            if(!process.env.API_URL) {
+            if(!apiUrl) {
                 throw new Error('error fetching api')
             }
-            const res = await fetch(process.env.API_URL, {
+            const res = await fetch(apiUrl, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -65,7 +66,10 @@ function ConnectForm() {
                 setStatus("");
             }, 2000)
         } catch(err) {
-            setStatus(`Error: ${err}`)
+            setStatus(`${err}`)
+            setTimeout(() => {
+                setStatus("");
+            }, 2000)
         }
     }
     return (
