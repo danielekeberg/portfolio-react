@@ -7,7 +7,8 @@ import Work from '@/components/Work';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import TechStack from '@/components/TechStack';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Fade from '@/components/FadeAnimation/Fade';
 
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <div className="mx-15 relative" id="top">
       <Analytics />
+      <SpeedInsights />
       <Header />
       <Fade dir='down'>
       <Collab />
