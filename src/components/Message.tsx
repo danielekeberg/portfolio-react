@@ -6,14 +6,10 @@ export default function Message() {
     const [msg, setMsg] = useState<{ message: string, date: string, firstname: string, lastname: string, time: number, email: string, id: number}[]>([]);
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
-    const [admin, setAdmin] = useState<string | null>(null);
     const [isHovered, setIsHovered] = useState(false);
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
     useEffect(() => {
-        const storedAdmin = localStorage.getItem("admin");
-        setAdmin(storedAdmin)
-
         async function fetchMsg() {
             try {
                 if(!apiUrl) {
@@ -29,14 +25,6 @@ export default function Message() {
         }
         fetchMsg();
     }, [])
-
-    if(!admin) {
-        return (
-            <div>
-                <h1>No access</h1>
-            </div>
-        )
-    }
 
     function removecard(i: string) {
         const el = document.getElementById(i);
