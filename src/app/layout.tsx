@@ -33,12 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <Analytics />
-      <SpeedInsights />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
