@@ -52,7 +52,7 @@ function ConnectForm() {
                     lastname: lastName.trim(),
                     email: email.trim(),
                     message: message.trim(),
-                    id: length,
+                    id: length < 1 ? 1 : (length + 1),
                 }),
             });
 
