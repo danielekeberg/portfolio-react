@@ -6,17 +6,14 @@ export default function Message() {
     const [msg, setMsg] = useState<{ message: string, date: string, firstname: string, lastname: string, time: number, email: string, id: number}[]>([]);
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
+    const [admin, setAdmin] = useState<string | null>(null);
+    const [isHovered, setIsHovered] = useState(false);
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    const admin = localStorage.getItem('admin');
-    if(!admin) {
-        return (
-            <div>
-                <h1>No access</h1>
-            </div>
-        )
-    }
 
     useEffect(() => {
+        const storedAdmin = localStorage.getItem("admin");
+        setAdmin(storedAdmin)
+
         async function fetchMsg() {
             try {
                 if(!apiUrl) {
@@ -32,6 +29,14 @@ export default function Message() {
         }
         fetchMsg();
     }, [])
+
+    if(!admin) {
+        return (
+            <div>
+                <h1>No access</h1>
+            </div>
+        )
+    }
 
     function removecard(i: string) {
         const el = document.getElementById(i);
@@ -52,8 +57,6 @@ export default function Message() {
             setError("erroor")
         }
     }
-
-    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-7 mb-10 xl:mx-0 md:mx-0 sm:mx-5">
