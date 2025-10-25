@@ -12,7 +12,10 @@ function ConnectForm() {
     useEffect(() => {
             async function getLength() {
                 try {
-                    const res = await fetch('https://api.sheetbest.com/sheets/a76cd739-4604-4c7e-856c-f1506d6b8708');
+                    if (!process.env.NEXT_PUBLIC_API_URL) {
+                        throw new Error('API URL is not defined');
+                    }
+                    const res = await fetch(process.env.NEXT_PUBLIC_API_URL);
                     const data = await res.json();
                     setLength(data.length);
                 } catch(err) {
