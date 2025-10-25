@@ -8,7 +8,7 @@ function ConnectForm() {
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("");
     const [length, setLength] = useState(0);
-    const apiUrl = process.env.NEXT_PUBLI_API_URL;
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
     useEffect(() => {
             async function getLength() {
