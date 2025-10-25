@@ -7,6 +7,7 @@ function Projects() {
             {projects.map((p, i) => (
                 <a href={p.live} target="_blank" key={i} className={`p-10 relative h-150 min-w-125 mb-10 ${i % 2 === 0 ? 'bg-neutral-800/50' : 'bg-neutral-700/50'}`}>
                     <div className="project-number gap-2 mb-5">
+                        <img src={p.logo} className="absolute left-0 top-0 opacity-20 -z-1000" />
                         <div className="absolute top-12 right-12">
                             <h1 className="text-6xl font-bold text-neutral-500">{String(i + 1).padStart(2, '0')}</h1>
                         </div>

@@ -4,27 +4,31 @@
         "description": "A running tracker that lets you log runs, monitor stats, and set weekly goals.",
         "tech": ["JavaScript", "HTML", "CSS"],
         "live": "https://runtracker-one.vercel.app/",
-        "github": "https://github.com/danielekeberg/runtracker"
+        "github": "https://github.com/danielekeberg/runtracker",
+        "logo": "/runtracker.png"
     },
     {
         "title": "ChessKnight",
         "description": "A personal portfolio website built with React and Tailwind CSS to showcase projects and skills.",
         "tech": ["JavaScript", "HTML", "CSS"],
         "live": "https://chessknight-five.vercel.app/",
-        "github": "https://github.com/danielekeberg/chessknight"
+        "github": "https://github.com/danielekeberg/chessknight",
+        "logo": "/chessknight.png"
     },
     {
         "title": "TimeStampify",
         "description": "Tracks and displays visit timestamps in real time using an API.",
         "tech": ["React", "RestAPI", "Tailwind CSS"],
         "live": "https://timestampify.netlify.app/",
-        "github": "https://github.com/danielekeberg/timestampify"
+        "github": "https://github.com/danielekeberg/timestampify",
+        "logo": "/timestampify.png"
     },
     {
         "title": "Danbook",
         "description": "A social media platform for book lovers built with HTML, CSS and JavaScript.",
         "tech": ["JavaScript", "HTML", "CSS"],
         "live": "https://danbook.netlify.app/",
-        "github": "https://github.com/danielekeberg/danbook"
+        "github": "https://github.com/danielekeberg/danbook",
+        "logo": "/danbook.png"
     }
 ]
