@@ -38,7 +38,10 @@ function ConnectForm() {
         const formatted = `${day}.${month}.${year} ${hours}:${minutes}`
 
         try {
-            const res = await fetch("https://api.sheetbest.com/sheets/a76cd739-4604-4c7e-856c-f1506d6b8708", {
+            if(!process.env.NEXT_PUBLIC_API_URL) {
+                throw new Error('error fetching api')
+            }
+            const res = await fetch(process.env.NEXT_PUBLIC_API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
