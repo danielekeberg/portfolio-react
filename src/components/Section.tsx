@@ -1,6 +1,6 @@
 function Section() {
     return (
-        <section className="h-[73vh] flex flex-col justify-end text-8xl">
+        <section className="h-[70vh] flex flex-col justify-end text-3xl md:text-8xl">
             <div className="flex gap-7">
                 <h1 className="font-bold">Front-end</h1>
                 <h1 className="font-bold text-neutral-700">Developer</h1>

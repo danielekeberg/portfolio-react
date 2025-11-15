@@ -74,20 +74,20 @@ function ConnectForm() {
     }
     return (
         <form onSubmit={handleSubmit} className="flex justify-center relative">
-            <div>
-                <div className="flex gap-5 mb-5">
+            <div className="w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                     <div className="relative">
-                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2" placeholder=" " type="text" id="fname" onChange={(e) => setFirstName(e.target.value)} />
+                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2 w-full" placeholder=" " type="text" id="fname" onChange={(e) => setFirstName(e.target.value)} />
                         <label htmlFor="fname" className="absolute left-2 text-neutral-400 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:text-base peer-focus:top-1 peer-focus:text-xs">First Name</label>
                     </div>
                     <div className="relative">
-                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2" placeholder=" " type="text" id="lname" onChange={(e) => setLastName(e.target.value)} />
+                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2 w-full" placeholder=" " type="text" id="lname" onChange={(e) => setLastName(e.target.value)} />
                         <label htmlFor="fname" className="absolute left-2 text-neutral-400 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:text-base peer-focus:top-1 peer-focus:text-xs">Last Name</label>
                     </div>
                 </div>
                 <div className="flex gap-5 mb-5">
-                    <div className="relative">
-                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2" placeholder=" " type="email" id="email" onChange={(e) => setEmail(e.target.value)} required />
+                    <div className="relative w-full">
+                        <input className="peer border border-neutral-800 rounded pt-5 pb-1 px-2 w-full" placeholder=" " type="email" id="email" onChange={(e) => setEmail(e.target.value)} required />
                         <label htmlFor="email" className="absolute left-2 text-neutral-400 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-neutral-300 peer-placeholder-shown:text-base peer-focus:top-1 peer-focus:text-xs">Email</label>
                     </div>
                 </div>

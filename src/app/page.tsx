@@ -12,12 +12,12 @@ import Fade from '@/components/FadeAnimation/Fade';
 
 export default function Home() {
   return (
-    <div className="mx-15 relative" id="top">
+    <div className="mx-5 md:mx-15 relative" id="top">
       <Header />
       <Fade dir='down'>
       <Collab />
       </Fade>
-      <div className="absolute right-0 -top-5 opacity-20 h-[35%]">
+      <div className="absolute right-0 md:-top-5 top-70 opacity-20 md:h-[35%]">
         <Fade dir="left">
           <img src="/daniel.png" />
         </Fade>
