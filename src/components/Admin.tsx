@@ -9,7 +9,7 @@ export default function Admin() {
         const storedAdmin = localStorage.getItem("admin");
         setAdmin(storedAdmin);
     })
-    if(admin) {
+    if(!admin) {
         return (
             <div className="h-screen items-center flex justify-center">
                 <h1 className="italic">No access.</h1>
