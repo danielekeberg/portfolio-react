@@ -17,7 +17,7 @@ export default function Home() {
       <Fade dir='down'>
       <Collab />
       </Fade>
-      <div className="absolute right-0 md:-top-5 top-70 opacity-20 md:h-[35%]">
+      <div className="absolute right-0 md:-top-5 top-50 opacity-20 md:h-[35%]">
         <Fade dir="left">
           <img src="/daniel.png" />
         </Fade>

@@ -13,6 +13,7 @@ function TechStack() {
         { folder: "/api.svg", title: "REST API" },
         { folder: "/netlify.svg", title: "Netlify" },
         { folder: "/vercel.svg", title: "Vercel" },
+        { folder: "/supabase.png", title: "Supabase" },
     ];
     const moreIcons = [...icons, ...icons, ...icons];
     return (
@@ -30,7 +31,7 @@ function TechStack() {
                 <div className="flex animate-scroll">
                     {moreIcons.map((icon, i) => (
                         <div key={i} className="flex-shrink-0 w-1/10 flex justify-center">
-                            <img src={icon.folder} alt={icon.title} className="w-16 h-16 m-4 opacity-80 hover:opacity-100 transition"/>
+                            <img src={icon.folder} alt={icon.title} className="md:w-16 md:h-16 m-4 opacity-80 hover:opacity-100 transition"/>
                         </div>
                     ))}
                 </div>

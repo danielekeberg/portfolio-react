@@ -14,13 +14,13 @@ function Breaker() {
         setTimezone(resolved);
     }, []);
     return (
-        <div className="flex items-center gap-10 opacity-40 my-7">
+        <div className="hidden md:flex items-center gap-10 opacity-40 my-7">
             <p className="w-150 md:w-50">Oslo, NO</p>
-            <div className="h-auto w-full mb-1 rounded hidden md:flex items-center opacity-20">
+            <div className="h-auto w-full mb-1 rounded flex items-center opacity-20">
                 <div className="h-0.5 bg-white w-full"></div>
             </div>
-            <p className="w-100 hidden md:block text-center">{timezone}</p>
-            <div className="h-auto w-full hidden md:flex mb-1 rounded items-center opacity-20">
+            <p className="w-100 text-center">{timezone}</p>
+            <div className="h-auto w-full flex mb-1 rounded items-center opacity-20">
                 <div className="h-0.5 bg-white w-full"></div>
             </div>
             <div className="flex gap-2 items-center text-[#41B78E]">

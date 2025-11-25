@@ -5,7 +5,8 @@
         "tech": ["JavaScript", "HTML", "CSS"],
         "live": "https://runtracker-one.vercel.app/",
         "github": "https://github.com/danielekeberg/runtracker",
-        "logo": "/runtracker.png"
+        "logo": "/runtracker.png",
+        "status": "maintenance"
     },
     {
         "title": "ChessKnight",
@@ -13,15 +14,17 @@
         "tech": ["JavaScript", "HTML", "CSS"],
         "live": "https://chessknight-five.vercel.app/",
         "github": "https://github.com/danielekeberg/chessknight",
-        "logo": "/chessknight.png"
+        "logo": "/chessknight.png",
+        "status": "maintenance"
     },
     {
         "title": "TimeStampify",
         "description": "Tracks and displays visit timestamps in real time using an API.",
-        "tech": ["React", "RestAPI", "Tailwind CSS"],
+        "tech": ["React", "Supabase", "Tailwind CSS"],
         "live": "https://timestampify.netlify.app/",
         "github": "https://github.com/danielekeberg/timestampify",
-        "logo": "/timestampify.png"
+        "logo": "/timestampify.png",
+        "status": "ok"
     },
     {
         "title": "Danbook",
@@ -29,6 +32,34 @@
         "tech": ["JavaScript", "HTML", "CSS"],
         "live": "https://danbook.netlify.app/",
         "github": "https://github.com/danielekeberg/danbook",
-        "logo": "/danbook.png"
+        "logo": "/danbook.png",
+        "status": "maintenance"
+    },
+    {
+        "title": "Catering Menu Demo",
+        "description": "A simple demo displaying a catering menu and basic company info.",
+        "tech": ["React", "Tailwind CSS"],
+        "live": "https://mat-demo.vercel.app/",
+        "github": "https://github.com/danielekeberg/mat-demo",
+        "logo": "/catering.svg",
+        "status": "ok"
+    },
+    {
+        "title": "Gym Center Demo",
+        "description": "A clean demo showcasing a fitness center layout with basic info and features.",
+        "tech": ["React", "Tailwind CSS"],
+        "live": "https://treningssenter-demo.vercel.app/",
+        "github": "https://github.com/danielekeberg/treningssenter-demo",
+        "logo": "/dumbbells.svg",
+        "status": "ok"
+    },
+    {
+        "title": "Hadeland Gravstein",
+        "description": "A brief overview of gravestone options and essential company information in a clean, respectful layout.",
+        "tech": ["React", "Tailwind CSS"],
+        "live": "https://hadelandgravstein.no",
+        "github": "https://github.com/danielekeberg/hg",
+        "logo": "/tombstone.svg",
+        "status": "ok"
     }
 ]
