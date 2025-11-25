@@ -13,7 +13,7 @@ function Projects() {
                             <h1 className="text-6xl font-bold text-neutral-500">{String(i + 1).padStart(2, '0')}</h1>
                         </div>
                     </div>
-                    <p className={`absolute top-[40%] -left-25 md:left-0 text-3xl translate-[50%] rotate-25 ${p.status === "maintenance" ? 'block' : 'hidden'}`}>Under Maintenance</p>
+                    <p className={`absolute top-[40%] -left-30 md:left-0 text-3xl translate-[50%] rotate-25 ${p.status === "maintenance" ? 'block' : 'hidden'}`}>Under Maintenance</p>
                     <div className="flex flex-col h-full justify-end">
                         <div className="md:h-35">
                             <h1 className="text-3xl md:text-4xl font-bold mb-5">{p.title}</h1>
