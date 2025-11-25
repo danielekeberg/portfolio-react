@@ -61,5 +61,14 @@
         "github": "https://github.com/danielekeberg/hg",
         "logo": "/tombstone.svg",
         "status": "ok"
+    },
+    {
+        "title": "Holidaze",
+        "description": "Browse, explore, and book holiday stays with a simple and user-friendly interface.",
+        "tech": ["React", "RestAPI", "Tailwind CSS"],
+        "live": "https://holidaze-iota.vercel.app/",
+        "github": "https://github.com/danielekeberg/holidaze",
+        "logo": "/sun.svg",
+        "status": "ok"
     }
 ]
