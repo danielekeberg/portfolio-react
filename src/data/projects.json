@@ -9,6 +9,15 @@
         "status": "maintenance"
     },
     {
+        "title": "CSStatLab",
+        "description": "Advanced Counter-Strike performance analytics platform with custom aim rating and data-driven insights.",
+        "tech": ["React", "RestAPI", "Tailwind CSS", "Supabase"],
+        "live": "https://csstatlab.com",
+        "github": "https://github.com/danielekeberg/csstatlab",
+        "logo": "/csstatlab.png",
+        "status": "ok"
+    },
+    {
         "title": "ChessKnight",
         "description": "A personal portfolio website built with React and Tailwind CSS to showcase projects and skills.",
         "tech": ["JavaScript", "HTML", "CSS"],
